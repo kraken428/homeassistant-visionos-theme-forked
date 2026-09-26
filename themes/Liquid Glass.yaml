@@ -2,18 +2,18 @@ Liquid Glass:
   modes:
     light:
       background-image: "center / cover no-repeat fixed url('https://staticfiles.net/4c0O3MbA2ldU7q1O-GZvy8kG6KcKN1QzUwxj5jza6k4/p/fcGL1QjQorI.jpg')"
-      primary-background-color: rgb(76, 80, 84)
-      secondary-background-color: rgb(76, 80, 84)
-      app-header-background-color: rgba(76, 80, 84, 0.3)
-      ha-card-background: rgba(150, 150, 150, 0.3)
-      app-theme-color: rgb(91, 138, 168) # Average header color, used on the top of the browser
+      primary-background-color: rgb(202, 216, 213)
+      secondary-background-color: rgb(176, 202, 204)
+      app-header-background-color: rgba(69, 130, 150, 0.62)
+      ha-card-background: rgba(248, 239, 220, 0.58)
+      app-theme-color: rgb(69, 130, 150) # Average header color, used on the top of the browser
     dark:
       background-image: "center / cover no-repeat fixed url('https://staticfiles.net/4c0O3MbA2ldU7q1O-GZvy8kG6KcKN1QzUwxj5jza6k4/p/BPZ9s21Bvog.jpg')"
-      primary-background-color: rgb(18, 11, 25)
-      secondary-background-color: rgb(18, 11, 25)
-      app-header-background-color: rgba(18, 11, 25, 0.3)
-      ha-card-background: rgba(0, 0, 0, 0.3)
-      app-theme-color: rgb(0, 0, 0)
+      primary-background-color: rgb(31, 31, 49)
+      secondary-background-color: rgb(43, 40, 62)
+      app-header-background-color: rgba(31, 31, 49, 0.62)
+      ha-card-background: rgba(79, 70, 99, 0.38)
+      app-theme-color: rgb(62, 59, 91)
   # Global
   lovelace-background: var(--background-image)
   light-primary-color: rgb(241, 241, 241) # Icons on sidebar
@@ -63,7 +63,7 @@ Liquid Glass:
   # Labels
   label-badge-background-color: "#23232E"
   label-badge-text-color: "#F1F1F1"
-  label-badge-red: rgba(255, 159, 9, 0.7) # from Apple systemOrange dark mode
+  label-badge-red: rgba(217, 108, 124, 0.82) # replacement - from Apple systemOrange dark mode
   # Cards
   card-background-color: var(--secondary-background-color) # Data table background
   paper-listbox-background-color: var(--primary-background-color)
@@ -97,30 +97,31 @@ Liquid Glass:
   app-header-backdrop-filter: var(--ha-card-backdrop-filter)
   app-header-edit-background-color: rgba(0, 0, 0, 0.2)
   # Colors
-  red-color: "#FF453A"
-  pink-color: "#FF375F"
-  purple-color: "#BF5AF2"
-  indigo-color: "#5E5CE6"
-  blue-color: "#0A84FF"
-  light-blue-color: "#66D4CF"
-  cyan-color: "#5AC8F5"
-  teal-color: "#6AC4DC"
-  green-color: "#32D74B"
-  yellow-color: "#FFD60A"
-  orange-color: "#FF9F0A"
-  brown-color: "#AC8E68"
-  primary-color: var(--orange-color)
-  ha-color-primary-05: "#331f00"
-  ha-color-primary-10: "#663d00"
-  ha-color-primary-20: "#995c00"
-  ha-color-primary-30: "#cc7a00"
+  red-color: "#D96C7C"         # Muted cranberry rose
+  pink-color: "#D987A5"        # Dusty blush pink
+  purple-color: "#A98AC8"      # Soft smoky lilac
+  indigo-color: "#7375B8"      # Twilight periwinkle
+  blue-color: "#6995C7"        # Muted evening blue
+  light-blue-color: "#83C4CB"  # Soft sea-glass blue
+  cyan-color: "#76B6D2"        # Powder blue
+  teal-color: "#73AFAA"        # Muted blue teal
+  green-color: "#82B985"       # Sage green
+  yellow-color: "#E6C877"      # Warm muted gold
+  orange-color: "#D69A6A"      # Soft terracotta
+  brown-color: "#A37B72"       # Dusty mauve brown
+  primary-color: var(--indigo-color)
+  
+  ha-color-primary-05: "#17172A"
+  ha-color-primary-10: "#22223D"
+  ha-color-primary-20: "#34345C"
+  ha-color-primary-30: "#50518A"
   ha-color-primary-40: var(--primary-color)
-  ha-color-primary-50: "#ffa31a"
-  ha-color-primary-60: "#ffad33"
-  ha-color-primary-70: "#ffc266"
-  ha-color-primary-80: "#ffd699"
-  ha-color-primary-90: "#ffebcc"
-  ha-color-primary-95: "#fff5e6"
+  ha-color-primary-50: "#8587C5"
+  ha-color-primary-60: "#9A9CD0"
+  ha-color-primary-70: "#B4B6DE"
+  ha-color-primary-80: "#CDCEE9"
+  ha-color-primary-90: "#E6E7F4"
+  ha-color-primary-95: "#F2F2F9"
   # Other
   paper-dialog-background-color: rgba(55, 55, 55, 0.8) # e.g., background of more-info
   paper-item-icon-color: white # also should mini-media-player icon white (but doesn't work by itself)
