@@ -2,11 +2,56 @@ Liquid Glass:
   modes:
     light:
       background-image: "center / cover no-repeat fixed url('https://staticfiles.net/4c0O3MbA2ldU7q1O-GZvy8kG6KcKN1QzUwxj5jza6k4/p/fcGL1QjQorI.jpg')"
-      primary-background-color: rgb(202, 216, 213)
-      secondary-background-color: rgb(176, 202, 204)
-      app-header-background-color: rgba(69, 130, 150, 0.62)
-      ha-card-background: rgba(248, 239, 220, 0.58)
-      app-theme-color: rgb(69, 130, 150) # Average header color, used on the top of the browser
+      primary-background-color: "#D6E2E4"
+      secondary-background-color: "#C5D9DD"
+      app-header-background-color: "rgba(65, 123, 145, 0.92)"
+      ha-card-background: "rgba(248, 250, 250, 0.82)"
+      card-background-color: "rgba(248, 250, 250, 0.82)"
+      app-theme-color: "#417B91"
+      primary-text-color: "#263642"
+      secondary-text-color: "#526976"
+      disabled-text-color: "#81939B"
+      light-primary-color: "#243742"
+      sidebar-background-color: "rgba(225, 237, 238, 0.76)"
+      sidebar-icon-color: "#3F6677"
+      sidebar-text-color: "#243742"
+      sidebar-selected-background-color: "rgba(255, 255, 255, 0.42)"
+      sidebar-selected-icon-color: "#1F596F"
+      sidebar-selected-text-color: "#1F596F"
+      paper-listbox-background-color: "rgba(248, 250, 250, 0.92)"
+      paper-dialog-background-color: "rgba(248, 250, 250, 0.94)"
+      more-info-header-background: "rgba(225, 237, 238, 0.90)"
+      mdc-theme-surface: "rgba(248, 250, 250, 0.96)"
+      material-background-color: "rgba(248, 250, 250, 0.96)"
+      label-badge-background-color: "#E2ECEE"
+      label-badge-text-color: "#263642"
+      paper-item-icon-color: "#3F6677"
+      mini-media-player-base-color: "#263642"
+      mini-media-player-icon-color: "#263642"
+      mdc-checkbox-unchecked-color: "#526976"
+      mdc-radio-unchecked-color: "#526976"
+      markdown-code-background-color: "#E7EFF1"
+      code-editor-background-color: "#E7EFF1"
+      rgb-card-background-color: "rgb(248, 250, 250)"
+      paper-slider-container-color: "rgba(38, 54, 66, 0.18)"
+      paper-slider-font-color: "#263642"
+      ha-color-on-neutral-normal: "#263642"
+      wa-color-neutral-fill-normal: "rgba(38, 54, 66, 0.08)"
+      ha-color-fill-primary-quiet-resting: "rgba(92, 98, 158, 0.12)"
+      ha-color-fill-primary-quiet-hover: "rgba(92, 98, 158, 0.20)"
+      primary-color: "#5C629E"
+      ha-color-primary-05: "#ECECF5"
+      ha-color-primary-10: "#DADBEA"
+      ha-color-primary-20: "#C3C5DE"
+      ha-color-primary-30: "#9B9EC6"
+      ha-color-primary-40: var(--primary-color)
+      ha-color-primary-50: "#4F548A"
+      ha-color-primary-60: "#434875"
+      ha-color-primary-70: "#363A61"
+      ha-color-primary-80: "#292D4C"
+      ha-color-primary-90: "#1D2038"
+      ha-color-primary-95: "#141628"
+
     dark:
       background-image: "center / cover no-repeat fixed url('https://staticfiles.net/4c0O3MbA2ldU7q1O-GZvy8kG6KcKN1QzUwxj5jza6k4/p/BPZ9s21Bvog.jpg')"
       primary-background-color: rgb(31, 31, 49)
@@ -14,11 +59,13 @@ Liquid Glass:
       app-header-background-color: rgba(31, 31, 49, 0.62)
       ha-card-background: rgba(79, 70, 99, 0.38)
       app-theme-color: rgb(62, 59, 91)
+
   # Global
   lovelace-background: var(--background-image)
   light-primary-color: rgb(241, 241, 241) # Icons on sidebar
   divider-color: rgba(152, 152, 157, 0.3) # from Apple systemGray dark mode
   accent-color: var(--primary-color)
+
   # Typography
   primary-font-family: '"SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
   ha-font-family-body: var(--primary-font-family)
@@ -31,13 +78,15 @@ Liquid Glass:
   paper-font-headline_-_font-family: var(--primary-font-family)
   paper-font-caption_-_font-family: var(--primary-font-family)
   mdc-typography-font-family: var(--primary-font-family)
+
   # Text
   primary-text-color: rgba(255, 255, 255, 0.96)
   secondary-text-color: rgba(222, 222, 222, 0.96)
   ha-color-text-secondary: var(--secondary-text-color)
   text-primary-color: var(--primary-text-color)
-  disabled-text-color: rgba(208, 208, 208, 0.5) # XXX: https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/2
+  disabled-text-color: rgba(208, 208, 208, 0.5) # XXX: [https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/2](https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/2)
   text-dark-color: var(--primary-text-color)
+
   # Sidebar Menu
   sidebar-background-color: var(--secondary-background-color)
   sidebar-icon-color: var(--light-primary-color)
@@ -45,12 +94,14 @@ Liquid Glass:
   sidebar-selected-background-color: var(--primary-background-color)
   sidebar-selected-icon-color: var(--primary-text-color)
   sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+
   # States and Badges
   state-icon-color: var(--primary-text-color)
   state-icon-active-color: var(--yellow-color)
   state-icon-unavailable-color: var(--disabled-text-color)
   state-inactive-color: var(--disabled-text-color)
-  paper-item-icon-active-color: var(--state-icon-active-color) # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/30
+  paper-item-icon-active-color: var(--state-icon-active-color) # see [https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/30](https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/30)
+
   # Sliders
   paper-slider-knob-color: "#FFFFFF"
   paper-slider-knob-start-color: var(--paper-slider-knob-color)
@@ -60,57 +111,65 @@ Liquid Glass:
   paper-slider-container-color: rgba(255, 255, 255, 0.5)
   paper-slider-font-color: "#000"
   ha-slider-background: none !important
+
   # Labels
   label-badge-background-color: "#23232E"
   label-badge-text-color: "#F1F1F1"
   label-badge-red: rgba(217, 108, 124, 0.82) # replacement - from Apple systemOrange dark mode
+
   # Cards
   card-background-color: var(--secondary-background-color) # Data table background
   paper-listbox-background-color: var(--primary-background-color)
   ha-card-border-radius: 34px
   ha-card-features-border-radius: var(--ha-card-border-radius)
   paper-card-background-color: var(--ha-card-background)
-  rgb-card-background-color: rgb(10, 10, 10) # see https://github.com/basnijholt/lovelace-ios-themes/issues/60
-  ha-card-border-width: 0 # https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357
+  rgb-card-background-color: rgb(10, 10, 10) # see [https://github.com/basnijholt/lovelace-ios-themes/issues/60](https://github.com/basnijholt/lovelace-ios-themes/issues/60)
+  ha-card-border-width: 0 # [https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357](https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/82#event-7732695357)
   ha-card-backdrop-filter: blur(8px)
   ha-card-box-shadow: >
     3px 3px 0.5px -3.5px rgba(255, 255, 255, 0.30) inset, -2px -2px 0.5px -2px rgba(255, 255, 255, 0.30) inset, 0 0 8px 1px rgba(255, 255, 255, 0.10) inset, 0 0 2px 0 rgba(0, 0, 0, 0.10)
+
   # Toggles
   paper-toggle-button-checked-button-color: "#484848"
   paper-toggle-button-checked-bar-color: "#484848"
   paper-toggle-button-unchecked-button-color: var(--paper-toggle-button-checked-button-color)
   paper-toggle-button-unchecked-bar-color: var(--disabled-text-color)
+
   # Table row
   table-row-background-color: var(--primary-background-color)
   table-row-alternative-background-color: var(--secondary-background-color)
+
   # Switches
   switch-checked-track-color: var(--green-color)
   switch-checked-button-color: "#FFF"
   switch-unchecked-track-color: var(--disabled-text-color)
   switch-unchecked-button-color: "#FFF"
+
   # Dialog
   ha-dialog-surface-backdrop-filter: var(--ha-card-backdrop-filter)
   dialog-box-shadow: var(--ha-card-box-shadow)
   ha-dialog-surface-background: var(--ha-card-background)
   ha-dialog-scrim-backdrop-filter: none
+
   # Header
   app-header-backdrop-filter: var(--ha-card-backdrop-filter)
   app-header-edit-background-color: rgba(0, 0, 0, 0.2)
+
   # Colors
-  red-color: "#D96C7C"         # Muted cranberry rose
-  pink-color: "#D987A5"        # Dusty blush pink
-  purple-color: "#A98AC8"      # Soft smoky lilac
-  indigo-color: "#7375B8"      # Twilight periwinkle
-  blue-color: "#6995C7"        # Muted evening blue
-  light-blue-color: "#83C4CB"  # Soft sea-glass blue
-  cyan-color: "#76B6D2"        # Powder blue
-  teal-color: "#73AFAA"        # Muted blue teal
-  green-color: "#82B985"       # Sage green
-  yellow-color: "#E6C877"      # Warm muted gold
-  orange-color: "#D69A6A"      # Soft terracotta
-  brown-color: "#A37B72"       # Dusty mauve brown
+  red-color: "#D96C7C" # Muted cranberry rose
+  pink-color: "#D987A5" # Dusty blush pink
+  purple-color: "#A98AC8" # Soft smoky lilac
+  indigo-color: "#7375B8" # Twilight periwinkle
+  blue-color: "#6995C7" # Muted evening blue
+  light-blue-color: "#83C4CB" # Soft sea-glass blue
+  cyan-color: "#76B6D2" # Powder blue
+  teal-color: "#73AFAA" # Muted blue teal
+  green-color: "#82B985" # Sage green
+  yellow-color: "#E6C877" # Warm muted gold
+  orange-color: "#D69A6A" # Soft terracotta
+  brown-color: "#A37B72" # Dusty mauve brown
   primary-color: var(--indigo-color)
-  
+
   ha-color-primary-05: "#17172A"
   ha-color-primary-10: "#22223D"
   ha-color-primary-20: "#34345C"
@@ -122,23 +181,26 @@ Liquid Glass:
   ha-color-primary-80: "#CDCEE9"
   ha-color-primary-90: "#E6E7F4"
   ha-color-primary-95: "#F2F2F9"
+
   # Other
   paper-dialog-background-color: rgba(55, 55, 55, 0.8) # e.g., background of more-info
   paper-item-icon-color: white # also should mini-media-player icon white (but doesn't work by itself)
   more-info-header-background: rgba(25, 25, 25, 0.5)
-  lumo-body-text-color: var(--primary-text-color) # see https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42
+  lumo-body-text-color: var(--primary-text-color) # see [https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42](https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/42)
   markdown-code-background-color: "#464646"
   code-editor-background-color: "#161616"
-  clear-background-color: var(--ha-card-background) # see https://github.com/basnijholt/lovelace-ios-themes/issues/64
+  clear-background-color: var(--ha-card-background) # see [https://github.com/basnijholt/lovelace-ios-themes/issues/64](https://github.com/basnijholt/lovelace-ios-themes/issues/64)
   mdc-theme-surface: var(--secondary-background-color) # this should be opaque as it's used by default for many overlays
   material-background-color: var(--secondary-background-color)
   mdc-checkbox-unchecked-color: "#FFF"
   mdc-radio-unchecked-color: "#FFF"
+
   # Custom
   mcg-title-letter-spacing: .15em
   mini-media-player-base-color: white
   mini-media-player-icon-color: white
-  # Added for https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/72
+
+  # Added for [https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/72](https://github.com/basnijholt/lovelace-ios-dark-mode-theme/issues/72)
   input-ink-color: var(--primary-text-color)
   input-fill-color: transparent
   input-disabled-fill-color: transparent
@@ -149,6 +211,7 @@ Liquid Glass:
   input-hover-line-color: var(--secondary-text-color)
   codemirror-property: var(--accent-color)
   md-list-container-color: none # ha-md-list already has a card background
+
   # Dropdown
   wa-border-style: none
   wa-shadow-m: var(--ha-card-box-shadow)
@@ -163,12 +226,14 @@ Liquid Glass:
   ha-color-fill-primary-quiet-hover: rgba(255, 255, 255, 0.2) # selection hover color
 
   uix-theme: "Liquid Glass"
+
   uix-drawer: |
     .mdc-drawer {
       background-color: var(--app-header-background-color) !important;
       backdrop-filter: var(--ha-card-backdrop-filter);
       font-family: var(--primary-font-family) !important;
     }
+
   uix-sidebar-yaml: |
     .: |
       :host {
@@ -196,6 +261,7 @@ Liquid Glass:
       ha-md-list-item.user {
         --uix-icon: lucide:user-round;
       }
+
   uix-root-yaml: |
     .: |
       :host {
@@ -245,6 +311,7 @@ Liquid Glass:
       .action-items #button-3 {
         --uix-icon: lucide:download;
       }
+
   uix-card-yaml: |
     .: |
       :host,
@@ -255,6 +322,7 @@ Liquid Glass:
       ha-card {
         backdrop-filter: unset !important;
       }
+
       ha-card::before {
         content: '';
         position: absolute;
@@ -265,10 +333,12 @@ Liquid Glass:
         border-radius: inherit;
         box-shadow: var(--ha-card-box-shadow);
       }
+
       :host(hui-heading-card) ha-card {
         background: none !important;
         backdrop-filter: none !important;
       }
+
       :host(hui-heading-card) ha-card::before {
         content: none !important;
       }
@@ -287,6 +357,7 @@ Liquid Glass:
         backdrop-filter: none !important;
         overflow: visible;
       }
+
       ha-card.text-only::before {
         content: none !important;
       }
@@ -296,6 +367,7 @@ Liquid Glass:
         background: none !important;
         backdrop-filter: none !important;
       }
+
       :host(mushroom-title-card) ha-card::before {
         content: none !important;
       }
@@ -306,6 +378,7 @@ Liquid Glass:
         backdrop-filter: none !important;
         box-shadow: none !important;
       }
+
       :host(mushroom-chips-card) ha-card::before {
         content: none !important;
         background: none !important;
@@ -319,21 +392,25 @@ Liquid Glass:
             .slider .slider-track-bar {
               border-radius: 0px !important;
             }
+
         service-call $:
           custom-feature-slider $: |
             .default .thumb {
               border-radius: 0px !important;
             }
+
         hui-cover-position-card-feature $:
           ha-control-slider$: |
             .slider .slider-track-bar {
               border-radius: 0px !important;
             }
+
         hui-cover-tilt-position-card-feature $:
           ha-control-slider$: |
             .slider .slider-track-bar {
               border-radius: 0px !important;
             }
+
         hui-light-brightness-card-feature $:
           ha-control-slider$: |
             .slider .slider-track-bar {
