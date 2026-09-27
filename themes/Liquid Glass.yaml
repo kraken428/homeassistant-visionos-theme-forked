@@ -241,6 +241,13 @@ Liquid Glass:
         font-family: var(--primary-font-family) !important;
       }
 
+      .panels-list,
+      :host([expanded]) .menu {
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: #ffffff38;
+      }
+
       ha-md-list-item,
       ha-md-list-item.selected::before {
         border-radius: var(--ha-card-border-radius) !important;
@@ -266,6 +273,13 @@ Liquid Glass:
     .: |
       :host {
         --mdc-typography-font-family: var(--primary-font-family);
+      }
+
+      :host([narrow][show-tabs]) .content {
+        padding: 10px;
+      }
+      .badge {
+        color: #ffffff !Important;
       }
 
       .header,
